@@ -3,7 +3,8 @@ Python Scripts to tune the REFCAL parameter automatically to WWV or a 10MHz GPSD
 
 Be sure to adjust the configuration for your setup:
 
-'--- Configuration ---
+'''
+#--- Configuration ---
 COM_PORT = "COM4"
 BAUD_RATE = 38400
 AUDIO_DEVICE_NAME = "Microphone (4- USB Audio Device"  # Automatically matches input device by name
@@ -15,7 +16,7 @@ CAPTURE_SECONDS = 4.0              # 4s capture = 0.25 Hz bin width (~0.01 Hz in
 
 DEADBAND_REFCAL_HZ = 0.1  # Skip EEPROM write if correction is <= 1 Hz (~0.4 Hz at 10 MHz)
 MAX_STEP_CLAMP = 200               # Safety cap on single-run adjustment (Hz)
-'
+'''
 
 The scripts samples the CW audio output at 10.000.000 Mhz for 4 seconds.
 Sidetone is then measured and the difference computed.
