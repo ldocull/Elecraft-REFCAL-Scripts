@@ -2,8 +2,8 @@
 Python Scripts to tune the REFCAL parameter automatically to WWV or a 10MHz GPSDO
 
 Be sure to adjust the configuration for your setup:
-'
-# --- Configuration ---
+
+'--- Configuration ---
 COM_PORT = "COM4"
 BAUD_RATE = 38400
 AUDIO_DEVICE_NAME = "Microphone (4- USB Audio Device"  # Automatically matches input device by name
